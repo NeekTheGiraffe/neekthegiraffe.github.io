@@ -1,0 +1,175 @@
+* {
+    font-family: Montserrat, 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #1a1c2b;
+    color: white;
+}
+
+.container {
+    background-color: #131a49;
+    padding: 0.1rem;
+}
+
+.container p {
+    text-align: center;
+}
+
+.container a {
+    color: white;
+}
+
+/* Link styles */
+
+.icon-link img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 36px;
+    height: 36px;
+
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(345deg) brightness(107%) contrast(101%);
+}
+
+.icon-link div {
+    border-radius: 5px;
+    padding: 5px;
+    transition-duration: 0.3s;
+}
+
+.icon-link:hover div {
+    background-color: #2437b4;
+}
+
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    white-space: nowrap;
+
+    transition-duration: 0.3s;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.main-link, .portfolio-link {
+    padding: 0.4em;
+}
+
+.main-link {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.main-link:hover {
+    background-color: #2437b4;
+}
+
+.portfolio-link {
+    border: 2px solid #e31c63;
+
+    font-size: 0.9rem;
+    color: #e31c63;
+}
+
+.portfolio-link:hover {
+    background-color: #e31c63;
+    color: white;
+}
+
+/* Welcome section */
+
+.welcome-section {
+    background: url('resources/background.png'), rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-section h1 {
+    margin-bottom: 0rem;
+}
+
+.welcome-section h2 {
+    margin-top: 0rem;
+}
+
+.welcome-section h3 {
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.main-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Portfolio section */
+
+.portfolio-header {
+    text-align: center;
+}
+
+.portfolio-entry:nth-child(even) { background-color: #171926; }
+.portfolio-entry:nth-child(odd) { background-color: #1a1c2b; }
+
+.portfolio-entry {
+    display: flex;
+    color: white;
+    
+}
+
+.portfolio-entry img {
+    min-width: 50vw;
+    height: 33.3vh;
+    object-fit: cover;
+    align-self: center;
+}
+
+.portfolio-entry-info {
+    padding: 0rem 0.8rem 0.4rem 0.8rem;
+}
+
+.portfolio-button-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-button {
+    margin-bottom: 1rem;
+    margin-right: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    .portfolio-entry {
+        flex-direction: column;
+    }
+
+    .portfolio-entry img {
+        width: 100vw;
+    }
+}
+
+@keyframes press {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

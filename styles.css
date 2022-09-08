@@ -184,11 +184,20 @@ body {
 }
 
 /* App image */
-.portfolio-entry .app-img {
+.app-img {
     min-width: 50vw;
     height: 33.3vh;
     object-fit: cover;
     align-self: center;
+}
+.blur {
+    filter: blur(2px);
+    width: 105%;
+    height: 105%;
+    margin: -2px;
+}
+.blur-wrapper {
+    overflow: hidden;
 }
 
 .portfolio-entry-info {

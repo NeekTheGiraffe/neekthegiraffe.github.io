@@ -99,6 +99,7 @@ body {
 
 .welcome-section h1 {
     margin-bottom: 0rem;
+    font-size: 3rem;
 }
 
 .welcome-section h2 {
@@ -108,6 +109,11 @@ body {
 .welcome-section h3 {
     margin-right: 0.4rem;
     margin-left: 0.4rem;
+}
+
+.welcome-section p {
+    margin-top: 0rem;
+    font-size: 1.5rem;
 }
 
 .main-links {

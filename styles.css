@@ -4,22 +4,12 @@
 
 body {
     margin: 0px;
-    background-color: #1a1c2b;
+    background-color: #1e2032;
     color: white;
 }
 
-.container {
-    background-color: #131a49;
-    padding: 0.1rem;
-}
-
-.container p {
-    text-align: center;
-}
-
-.container a {
-    color: white;
-}
+.footer { text-align: center; color: white; }
+.footer a { color: white;}
 
 /* Link styles */
 
@@ -37,11 +27,11 @@ body {
 .icon-link div {
     border-radius: 5px;
     padding: 5px;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
 }
 
-.icon-link:hover div {
-    background-color: #2437b4;
+.icon-link:hover div, .icon-link:focus div, .main-link:hover, .main-link:focus {
+    background-color: #01378f;
 }
 
 .link {
@@ -50,7 +40,7 @@ body {
     background-color: transparent;
     white-space: nowrap;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
 
     border: none;
     border-radius: 5px;
@@ -63,31 +53,28 @@ body {
 .main-link {
     font-size: 1.1rem;
     color: white;
-}
-
-.main-link:hover {
-    background-color: #2437b4;
+    text-decoration: underline;
 }
 
 .portfolio-link {
-    border: 2px solid #e31c63;
+    border: 2px solid #25bcff;
 
     font-size: 0.9rem;
-    color: #e31c63;
+    color: #25bcff;
 }
 
-.portfolio-link:hover {
-    background-color: #e31c63;
+.portfolio-link:hover, .portfolio-link:focus {
+    background-color: #25bcff;
     color: white;
 }
 
 /* Welcome section */
 
 .welcome-section {
-    background: url('resources/background.png'), rgba(0, 0, 0, 0.3);
+    background: url('resources/background.jpg'), rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
 
     text-align: center;
     color: white;
@@ -119,12 +106,12 @@ body {
 
 /* ------ Portfolio section ------ */
 
-.portfolio-header {
+.portfolio-wrapper {
+    margin: 0px 10px;
+}
+.portfolio-wrapper h2 {
     text-align: center;
 }
-
-.portfolio-entry:nth-child(even) { background-color: #171926; }
-.portfolio-entry:nth-child(odd) { background-color: #1a1c2b; }
 
 .portfolio-entry {
     display: flex;
@@ -132,64 +119,26 @@ body {
     
 }
 
-/* .portfolio-entry p {
-    margin-top: 0.5em;
-} */
+.portfolio { max-width: 650px; margin: auto;}
+
 .portfolio-entry h3 {
     margin-bottom: 0.5em;
 }
 
-/* ----- Logos ----- */
-.logos {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.logo {
-    width: 20px;
-    height: 20px;
-}
-.logo img {
-    /* width: 20px;
-    height: 20px; */
-    width: 100%;
-    height: 100%;
-
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(345deg) contrast(0%) brightness(300%) ;
-    transition-duration: 0.2s;
-}
-.logo:hover img {
-    filter: none;
-}
-
-.logo {
-    position: relative;
-    display: inline-block;
-}
-.tooltip {
-    position: absolute;
-    visibility: hidden;
-    background-color: #0e0f1a;
-    color: white;
-    text-align: center;
-    bottom: 130%;
-    left: 0%;
-    z-index: 1;
-    white-space: nowrap;
-    
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-.logo:hover .tooltip {
-    visibility: visible;
-}
+hr {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: #13141f;
+  }
 
 /* App image */
 .app-img {
-    min-width: 50vw;
+    width: 33.3vh;
     height: 33.3vh;
     object-fit: cover;
     align-self: center;
+    border-radius: 5px;
 }
 .blur {
     filter: blur(2px);
@@ -221,7 +170,7 @@ body {
     }
 
     .portfolio-entry .app-img {
-        width: 100vw;
+        width: calc(100vw - 10px);
     }
 }
 

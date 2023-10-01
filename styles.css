@@ -87,7 +87,7 @@ body {
     background: url('resources/background.png'), rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
 
     text-align: center;
     color: white;

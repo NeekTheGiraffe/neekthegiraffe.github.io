@@ -30,7 +30,7 @@ body {
     transition-duration: 0.1s;
 }
 
-.icon-link:hover div, .icon-link:focus div, .main-link:hover, .main-link:focus {
+.icon-link:hover div, .main-link:hover {
     background-color: #01378f;
 }
 
@@ -63,7 +63,7 @@ body {
     color: #25bcff;
 }
 
-.portfolio-link:hover, .portfolio-link:focus {
+.portfolio-link:hover {
     background-color: #25bcff;
     color: white;
 }

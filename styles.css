@@ -2,6 +2,17 @@
     font-family: Montserrat, 'Open Sans', Arial, sans-serif;
 }
 
+a {
+    text-decoration: underline;
+    color: #99C1F1;
+}
+a:visited {
+    color: #E19CE2;
+}
+a:active, a:visited:active {
+    color: #E01B24;
+}
+
 body {
     margin: 0px;
     background-color: #1e2032;
@@ -39,6 +50,7 @@ body {
     text-decoration: none;
     background-color: transparent;
     white-space: nowrap;
+    color: white !important;
 
     transition-duration: 0.1s;
 
@@ -60,12 +72,12 @@ body {
     border: 2px solid #25bcff;
 
     font-size: 0.9rem;
-    color: #25bcff;
+    color: #25bcff !important;
 }
 
 .portfolio-link:hover {
     background-color: #25bcff;
-    color: white;
+    color: white !important;
 }
 
 /* Welcome section */
